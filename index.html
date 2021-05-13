@@ -85,7 +85,11 @@
                 </h1>
 
                 <form class="form">
-                    <input type="text" name="phone" class="form__input phone-mask" placeholder="Введите номер WhatsApp"/>
+                    <div class="form__input-field">
+                        <input type="text" name="phone" class="form__input phone-mask error" placeholder="Введите номер WhatsApp"/>
+
+                        <div class="error_wrapper"><span class="error_alert">некорректный телефон</span></div>
+                    </div>
 
                     <button type="submit" class="form__btn">Начать чат</button>
                 </form>

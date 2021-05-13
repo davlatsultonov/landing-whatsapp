@@ -208,6 +208,10 @@ ul {
     margin:  auto;
 }
 
+.form__input-field {
+    position: relative;
+}
+
 .form__input, .form__btn {
     border-radius: 6px;
 }
@@ -246,6 +250,10 @@ ul {
     letter-spacing: normal;
     line-height: 24px;
     text-align: center;
+}
+
+.form__input.error {
+    border-color: red;
 }
 
 .form__btn {
@@ -450,6 +458,28 @@ ul {
 .select-box option {
     color: #000;
     text-align: center;
+}
+
+.error_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 25.875rem;
+}
+
+
+.error_alert {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: red;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    right: .5rem;
+    bottom: 8px;
+    padding: 3px 3px 2px;
+    line-height: 8px;
+    border-radius: 2px;
+    border: 1px solid red;
 }
 
 @keyframes radiance {
